@@ -1,0 +1,23 @@
+.tablist li {
+    display: list-item;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tablist ul {
+    padding: 0;
+}
+
+.tablist {
+    min-width: 180px;
+    font-size: 13px;
+    padding-right: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .tablist {
+        width: 100%;
+    }
+}

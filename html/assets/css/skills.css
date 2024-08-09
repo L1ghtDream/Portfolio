@@ -1,0 +1,36 @@
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.skills-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--sf-mono);
+    font-size: 15px;
+}
+
+.skills-list li a {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--sf-mono);
+    font-size: 15px;
+    padding: 0;
+    color: var(--clickable-color);
+}
+
+.skills-list li::before {
+    content: "▸";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    color: var(--clickable-color);
+    line-height: 12px;
+}

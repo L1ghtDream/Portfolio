@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/topbar.css">
+    <link rel="stylesheet" href="assets/css/degrees.css">
+    <link rel="stylesheet" href="assets/css/popup-degree.css">
+
+    <link rel="stylesheet" href="/assets/font/calibre/style.css">
+    <link rel="stylesheet" href="/assets/font/sf-mono/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.4.95/css/materialdesignicons.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+
+    <title>Voinea Radu</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <img src="/assets/images/logo.png" class="logo" />
+
+    <div class="side-nav animate__animated animate__fadeOutRight">
+        <div class="close" onclick="closeNav()">x</div> 
+        <ul>
+            <li class="one"><a class="link" href="/">
+                <span class="mdi mdi-home"></span>
+                Home
+            </a></li>
+            <li class="two"><a class="link" href="/degrees">
+                <span class="mdi mdi-school"></span>
+                Degrees
+            </a></li>
+            <li class="three"><a class="link" href="https://cv.voinearadu.com" target="_blank">
+                <span class="mdi mdi-file"></span>
+                Resume
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="top-bar">
+            <ul>
+                <li class="one"><a href="/">Home</a></li>
+                <li class="two"><a href="/degrees">Degrees</a></li>
+                <li class="three"><a href="https://cv.voinearadu.com" target="_blank">Resume</a></li>
+                <hr style="margin-left: 33%" />
+            </ul>
+        </div>
+        <div class="top-menu">
+            <span class="top-bar-menu mdi mdi-menu" onclick="openNav()"></span>
+        </div>
+    </div>
+
+
+    <div class="sidebar-left">
+        <a href="https://github.com/L1ghtDream/" class="social"><span class="mdi mdi-github"></span></a>
+        <a href="linkedin.com/in/voinearadu/" class="social"><span class="mdi mdi-linkedin"></span></a>
+        <a href="https://twitter.com/_L1ghtDream" class="social"><span class="mdi mdi-twitter"></span></a>
+        <a href="https://www.instagram.com/voinea.radu.38/" class="social"><span class="mdi mdi-instagram"></span></a>
+        <vline />
+    </div>
+
+    <div class="sidebar-right" orientation="right">
+        <a href="#" class="email" onclick="copyEmail()">contact@voinearadu.com</a>
+        <vline />
+    </div>
+
+    <div class="popup" id="popup-template" hidden>
+        <div class="content-view">
+            <div class="close" onclick="closePopup()">x</div> 
+            <div class="container">
+                <div class="title"></div>
+                <div class="degree"><img src="/assets/images/MicroBachelors.png"></div>
+                <div class="details">
+                    <p>Platform: <a target="_blank" href="#" class="link"></a></p>
+                    <p>Degree ID: <a target="_blank" href="#" class="link"></a></p>
+                    <p>Issue Date:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-view">
+
+
+        <div class="section">
+            <div class="title">Bachelors</div>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Programing & Data Structures</div>
+                        <div class="image-link">assets/images/MicroBachelors.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://edx.org</div>
+                        <div class="degree-id">95d403a687db40beaefccf8a0b771320</div>
+                        <div class="degree-id-link">https://credentials.edx.org/credentials/95d403a687db40beaefccf8a0b771320</div>
+                        <div class="issue-date">January 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="title">Profesional Certificates</div>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Introduction to Object-Oriented Programming with Java</div>
+                        <div class="image-link">assets/images/java_oop.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://edx.org</div>
+                        <div class="degree-id">3d08afe91a964bb6af20ab2a0b0dbe2f</div>
+                        <div class="degree-id-link">https://credentials.edx.org/credentials/3d08afe91a964bb6af20ab2a0b0dbe2f</div>
+                        <div class="issue-date">February 2022</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Programming & Data Structures</div>
+                        <div class="image-link">assets/images/programing_and_data_structures.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://edx.org</div>
+                        <div class="degree-id">95d403a687db40beaefccf8a0b771320</div>
+                        <div class="degree-id-link">https://credentials.edx.org/credentials/95d403a687db40beaefccf8a0b771320</div>
+                        <div class="issue-date">January 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <div class="title">National Olympiad</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">AcadNet</div>
+                        <div class="image-link">assets/images/2023_acadnet_nationala_p3.jpg</div>
+                        <div class="platform">UPB Acadnet</div>
+                        <div class="platform-link">https://acadnet.ro/</div>
+                        <div class="degree-id">3881 / 2023</div>
+                        <div class="degree-id-link">https://concurs.acadnet.eu/pluginfile.php/3512/mod_folder/content/0/is-11-12.pdf</div>
+                        <div class="issue-date">May 2023</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Computer Science Olympiad 2023 - Mention</div>
+                        <div class="image-link">assets/images/2023_info_judet_mentiune.png</div>
+                        <div class="platform">Romania's National Organization</div>
+                        <div class="platform-link"></div>
+                        <div class="degree-id"></div>
+                        <div class="degree-id-link"></div>
+                        <div class="issue-date">May 2023</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Computer Science Olympiad 2022 - Mention</div>
+                        <div class="image-link">assets/images/2022_info_judet_mentiune.png</div>
+                        <div class="platform">Romania's National Organization</div>
+                        <div class="platform-link"></div>
+                        <div class="degree-id"></div>
+                        <div class="degree-id-link"></div>
+                        <div class="issue-date">May 2022</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">SEPI 2021 - Special Distinction</div>
+                        <div class="image-link">assets/images/osepi_special_judet.png</div>
+                        <div class="platform">SEPI</div>
+                        <div class="platform-link">https://www.sepi.ro/</div>
+                        <div class="degree-id">PH_10_2618</div>
+                        <div class="degree-id-link"></div>
+                        <div class="issue-date">May 2021</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">EmpowerSoft 2021 - Mention</div>
+                        <div class="image-link">assets/images/empowersoft_mention_national.png</div>
+                        <div class="platform">EmpowerSoft</div>
+                        <div class="platform-link">https://empowersoft.ro/</div>
+                        <div class="degree-id">E160</div>
+                        <div class="degree-id-link">https://empowersoft.ro/concurs/diplome/sectiunea5/Diploma_PM_P-E160.pdf</div>
+                        <div class="issue-date">May 2021</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Computer Science Olympiad 2020 - Mention</div>
+                        <div class="image-link">assets/images/2020_info_judet_mentiune.png</div>
+                        <div class="platform">Romania's National Organization</div>
+                        <div class="platform-link"></div>
+                        <div class="degree-id"></div>
+                        <div class="degree-id-link"></div>
+                        <div class="issue-date">May 2020</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Phi 2020 - Mention</div>
+                        <div class="image-link">assets/images/phi_mentiune_nationala.png</div>
+                        <div class="platform">Phi</div>
+                        <div class="platform-link">http://stoner.phys.uaic.ro/phi.html</div>
+                        <div class="degree-id"></div>
+                        <div class="degree-id-link"></div>
+                        <div class="issue-date">May 2020</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <div class="title">Degrees</div>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Harvard CS50</div>
+                        <div class="image-link">assets/images/cs50.png</div>
+                        <div class="platform">Harvard x EDX</div>
+                        <div class="platform-link">https://cs50.harvard.edu/</div>
+                        <div class="degree-id">04acc3d1-53ea-4395-b8f2-6f1f67a9f720</div>
+                        <div class="degree-id-link">https://cs50.harvard.edu/certificates/04acc3d1-53ea-4395-b8f2-6f1f67a9f720</div>
+                        <div class="issue-date">December 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Harvard CS50 Web</div>
+                        <div class="image-link">assets/images/cs50_web.png</div>
+                        <div class="platform">Harvard x EDX</div>
+                        <div class="platform-link">https://cs50.harvard.edu/</div>
+                        <div class="degree-id">7aadc2d8-d067-467a-af3f-52e0a7803a01</div>
+                        <div class="degree-id-link">https://cs50.harvard.edu/certificates/7aadc2d8-d067-467a-af3f-52e0a7803a01</div>
+                        <div class="issue-date">May 2022</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Harvard CS50 AI</div>
+                        <div class="image-link">assets/images/cs50_ai.png</div>
+                        <div class="platform">Harvard x EDX</div>
+                        <div class="platform-link">https://cs50.harvard.edu/</div>
+                        <div class="degree-id">5cfddddf-bcd7-485c-8c5d-0c288d1fc5d1</div>
+                        <div class="degree-id-link">https://cs50.harvard.edu/certificates/5cfddddf-bcd7-485c-8c5d-0c288d1fc5d1</div>
+                        <div class="issue-date">August 2022</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">NYU - Introduction to Programming in C++</div>
+                        <div class="image-link">assets/images/CPP.PRG.1.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">74ca9df1ce4540db93a8359369a43d21</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/74ca9df1ce4540db93a8359369a43d21</div>
+                        <div class="issue-date">July 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">NYU - Advanced Programming in C++</div>
+                        <div class="image-link">assets/images/CPP.PRG.2.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">8033b3bbcc724b31a580e79aac1ee9ff</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/8033b3bbcc724b31a580e79aac1ee9ff</div>
+                        <div class="issue-date">November 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">NYU - Introduction to Data Structures</div>
+                        <div class="image-link">assets/images/CPP.PRG.3.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">835446a1852d4674ae5323fb9db57577</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/835446a1852d4674ae5323fb9db57577</div>
+                        <div class="issue-date">January 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">NYU - Advenced Data Structures</div>
+                        <div class="image-link">assets/images/CPP.PRG.4.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">a29e65562f7345fca58254a1a50be695</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/a29e65562f7345fca58254a1a50be695</div>
+                        <div class="issue-date">January 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">GCP - Google Cloud Essentials</div>
+                        <div class="image-link">assets/images/gcp_google_cloud_essentials.png</div>
+                        <div class="platform">Google Cloud Skill Boost</div>
+                        <div class="platform-link">https://www.cloudskillsboost.google/</div>
+                        <div class="degree-id">1575699</div>
+                        <div class="degree-id-link">https://www.cloudskillsboost.google/public_profiles/643253f9-e7a4-4ded-88f5-6f3741419919/badges/1575699</div>
+                        <div class="issue-date">November 2021</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">The Linux Fundation - Introduction to Linux</div>
+                        <div class="image-link">assets/images/LFS101x.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">60f3b8d3054a43e9b4670474eda3e61d</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/60f3b8d3054a43e9b4670474eda3e61d</div>
+                        <div class="issue-date">January 2022</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Georgia Tech Java - Foundations and Syntax Basics</div>
+                        <div class="image-link">assets/images/CS1331xI.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">9f80f8ae0fcf47e295448d25b4ebf8e4</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/9f80f8ae0fcf47e295448d25b4ebf8e4</div>
+                        <div class="issue-date">January 2022</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Georgia Tech Java - Object-Oriented Programming and Algorithms</div>
+                        <div class="image-link">assets/images/CS1331xII.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">e9885d3dc2724d1dbbcce7cba85b5803</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/e9885d3dc2724d1dbbcce7cba85b5803</div>
+                        <div class="issue-date">January 2022</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="properties" hidden>
+                        <div class="title">Georgia Tech Java - Exceptions, Data Structures, Recursion, and GUIs</div>
+                        <div class="image-link">assets/images/CS1331xII.png</div>
+                        <div class="platform">EDX</div>
+                        <div class="platform-link">https://www.edx.org/</div>
+                        <div class="degree-id">f006e8f97c554778a60a26aa2a57a9e8</div>
+                        <div class="degree-id-link">https://courses.edx.org/certificates/f006e8f97c554778a60a26aa2a57a9e8</div>
+                        <div class="issue-date">February 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/assets/js/scripts.js" defer></script>
+    <script src="/assets/js/popup.js"></script>
+    <script src="assets/js/degrees.js"></script>
+
+</body>
+
+</html>

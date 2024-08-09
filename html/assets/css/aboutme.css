@@ -1,0 +1,24 @@
+.about-me {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+
+.about-me .number {
+    color: var(--clickable-color);
+    font-size: 30px;
+    font-family: 'Inconsolata';
+    font-variant-numeric: slashed-zero;
+}
+
+.about-me .text {
+    color: var(--accent-color);
+    font-size: 40px;
+    font-variant-numeric: slashed-zero;
+}
+
+.about-me .title {
+    display: flex;
+}

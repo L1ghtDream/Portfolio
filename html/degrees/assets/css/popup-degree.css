@@ -1,0 +1,109 @@
+.popup {
+    top: 0px;
+    right: 0px;
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 20;
+}
+
+.popup .content-view{
+    border-radius: 10px;
+    background-color: var(--popup-color);
+    position: absolute;
+    margin-left: 23vw;
+    margin-top: 8vh;
+}
+
+.popup .content-view .degree{
+    background-color: inherit;
+    padding-bottom: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+.popup .content-view .title{
+    background-color: inherit;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.popup .content-view .details{
+    background-color: inherit;
+    color: var(--text-color);
+    font-size: 23px;
+}
+
+.popup .content-view .details p{
+    background-color: inherit;
+    padding-bottom: 7px;
+}
+
+.popup .content-view .degree img{
+    background-color: inherit;
+    width: 50vw;
+    max-height: 500px;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: inherit;
+    margin: 50px;
+}
+
+.popup .link {
+    background-color: inherit;
+    padding: 0;
+}
+
+.popup .close {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: var(--clickable-color);
+    text-decoration: none;
+    z-index: 40;
+    float: right;
+    right: 20px;
+    top: 20px;
+}
+
+.elementToFadeIn {
+    animation: fadeInAnimation 0.2s linear forwards;
+}
+
+.elementToFadeOut {
+    animation: fadeOutAnimation 0.2s linear forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { 
+        opacity: 0; 
+        top: -50px;
+    }
+    100% { 
+        opacity: 1; 
+        top: 0px;
+    } 
+}
+
+@keyframes fadeOutAnimation {
+    0% { 
+        opacity: 1;
+        top: 0px;
+    }
+    100% { 
+        opacity: 0; 
+        top: 50px;
+    }
+}

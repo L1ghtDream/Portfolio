@@ -1,0 +1,200 @@
+.experience {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    margin-left: 6.5vw;
+    margin-right: 10vw;
+    width: 50vw;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.experience .number {
+    color: var(--clickable-color);
+    font-size: 30px;
+    font-family: 'Inconsolata';
+    font-variant-numeric: slashed-zero;
+}
+
+.experience .text {
+    color: var(--accent-color);
+    font-size: 40px;
+    font-variant-numeric: slashed-zero;
+}
+
+.experience-bar-handle {
+    background: var(--clickable-color);
+    height: 40px;
+    width: 4px;
+    margin: 0;
+    border: none;
+    transition: .3s ease-in-out;
+    position: relative;
+    left: -2px;
+}
+
+.experience-bar {
+    background: var(--text-color);
+    width: 1px;
+    border: none;
+    position: relative;
+}
+
+.experience .content .content-tab{
+    display: flex;
+}
+
+.experience .content {
+    display: flex;
+}
+
+.experience .title {
+    display: flex;
+}
+
+.experience .content .title {
+    display: block;
+}
+
+.experience-select-active {
+    color: var(--clickable-color);
+    background-color: var(--light-backgtound);
+}
+
+.experience-select-active-parent {
+    background-color: var(--light-backgtound);
+}
+
+.tablist span {
+    font-family: var(--sf-mono);
+}
+
+.experience .entry .title .position {
+    font-size: 25px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.experience .entry .title .duration {
+    font-family: var(--sf-mono);
+    font-size: 15px;
+}
+
+.experience .entry .position-atributes {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.experience .entry .position-atributes li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.experience .entry .position-atributes li::before {
+    content: "▸";
+    top: 6px;
+    left: 0px;
+    color: var(--clickable-color);
+    line-height: 12px;
+}
+
+.experience .projects {
+    padding-top: 50px;
+}
+
+.experience .projects ul {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+}
+
+.experience .projects li {
+    margin-bottom: 70px;
+}
+
+.experience .projects .project-inner {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: 4px;
+    background-color: var(--light-backgtound);
+    overflow: auto;
+}
+
+.experience .projects .project-inner * {
+    background-color: var(--light-backgtound);
+}
+
+.experience .projects .project-inner .description {
+    font-size: 17px;
+    width: auto;
+}
+
+.experience .projects .project-inner .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--accent-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.experience .projects .project-inner .tech * {
+    font-size: 12px;
+    font-family: var(--sf-mono);
+    display: flex;
+    margin: 0;
+    color: var(--low-color);
+}
+
+.experience .projects .project-inner .tech ul {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+
+.experience .projects .project-inner .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience .projects .project-inner .header .big {
+    font-size: 40px;
+    color: var(--clickable-color);
+}
+
+@media screen and (max-width: 800px) {
+    .experience .content{
+        display: block;
+    }
+
+    .experience .content .content-tab{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .title {
+        display: block;
+    }
+    
+    .title .hline {
+        display: none;
+    }
+}
