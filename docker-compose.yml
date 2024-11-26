@@ -4,6 +4,7 @@ services:
   web:
     container_name: portfolio-v3
     image: nginx:latest
+    restart: unless-stopped
     ports: []
       # - "1234:80" # HTTP
     volumes:
