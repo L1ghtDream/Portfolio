@@ -1,15 +1,15 @@
 registerExperienceButtons(8);
 registerExperienceHover(8);
 
-function get_handle_size(){
+function get_handle_size() {
     return 38;
 }
 
-function getElement(_class){
+function getElement(_class) {
     return document.getElementsByClassName(_class)[0];
 }
 
-function getElements(_class){
+function getElements(_class) {
     return document.getElementsByClassName(_class);
 }
 

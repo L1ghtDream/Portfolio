@@ -13,7 +13,7 @@ function openPopup(executor) {
         popup.getElementsByClassName("content-view")[0].classList.remove("elementToFadeIn");
     }, 250);
 
-    popup.hidden=false;
+    popup.hidden = false;
 }
 
 function closePopup() {

@@ -3,7 +3,7 @@ for (let index = 0; index < cards.length; index++) {
     const card = cards[index];
     let properties = getProperties(card);
 
-    if( properties == undefined || properties == null) {
+    if (properties === undefined || properties == null) {
         continue;
     }
 
@@ -11,26 +11,26 @@ for (let index = 0; index < cards.length; index++) {
         <span class="name">
             ${properties.title}
         </span>
-        <img src="${properties.image}">
+        <img src="${properties.image}" alt="degree">
     `;
 
-    card.onclick = function() {
+    card.onclick = function () {
         openPopup((popup) => handleDegreePopup(popup, card));
     }
 }
 
 loop();
 
-function loop(){
+function loop() {
     setTimeout(() => {
         whileLoop()
         loop();
     }, 100);
 }
 
-function whileLoop(){
+function whileLoop() {
     width = getWidth()
-    numberOfColumns = parseInt(width/(390 + 40 + 40))
+    numberOfColumns = parseInt(width / (390 + 40 + 40))
 
     numberOfColumns = Math.min(numberOfColumns, 3)
 
@@ -39,11 +39,11 @@ function whileLoop(){
     for (let index = 0; index < grids.length; index++) {
         const grid = grids[index];
         let localNumberOfColumns = numberOfColumns;
-        if(grid.children.length <=3 ){
+        if (grid.children.length <= 3) {
             localNumberOfColumns = Math.min(grid.children.length, localNumberOfColumns)
         }
 
-        grid.style=`grid-template-columns: repeat(${localNumberOfColumns}, var(--card-width));`
+        grid.style = `grid-template-columns: repeat(${localNumberOfColumns}, var(--card-width));`
     }
 
     popups = document.getElementsByClassName("popup");
@@ -54,39 +54,39 @@ function whileLoop(){
 
         let popupWitdh = 1100;
         let remaningWidth = width - popupWitdh;
-    
+
         newStyle = `
             width: ${popupWitdh}px;
-            margin-left: ${remaningWidth/2}px;
+            margin-left: ${remaningWidth / 2}px;
         `;
-    
+
         console.log(`${remaningWidth}px`)
-    
-        popupContent.style=newStyle;
+
+        popupContent.style = newStyle;
     }
 }
 
 function getWidth() {
     return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
     );
-  }
-  
+}
 
-function handleDegreePopup(popup, card){
+
+function handleDegreePopup(popup, card) {
     let properties = getProperties(card);
 
-    if(properties==null){
+    if (properties == null) {
         return null;
     }
 
     // Title
     popup.getElementsByClassName("title")[0].innerHTML = properties.title;
-    
+
     // Degree Image
     popup.getElementsByClassName("degree")[0].getElementsByTagName("img")[0].src = properties.image;
 
@@ -100,52 +100,52 @@ function handleDegreePopup(popup, card){
 
     // Issue Date
     popup.getElementsByClassName("details")[0].getElementsByTagName("p")[2].innerHTML = "Issue Date: " + properties.issue_date;
- 
+
     // Missing data cases
-    if(properties.platform_link == ""){
+    if (properties.platform_link === "") {
         popup.getElementsByClassName("details")[0].getElementsByTagName("a")[0].style += ";pointer-events: none;";
     }
-    if(properties.degree_id == ""){
+    if (properties.degree_id === "") {
         popup.getElementsByClassName("details")[0].getElementsByTagName("p")[1].remove()
-    }else if(properties.degree_id_link == ""){
+    } else if (properties.degree_id_link === "") {
         popup.getElementsByClassName("details")[0].getElementsByTagName("a")[1].style += ";pointer-events: none;"
     }
 
     let degreeImage = popup.getElementsByClassName("degree")[0].getElementsByTagName("img")[0];
 
-    if(degreeImage == undefined){
+    if (degreeImage === undefined) {
         return;
     }
 
     degreeImage.style = "height: 100%; width: auto;";
 
     setTimeout(() => {
-        let _16_9_width = serverImage.height * 16/9;
+        let _16_9_width = serverImage.height * 16 / 9;
         let current_width = serverImage.width;
 
         height = "100%";
 
-        if(serverImage.height > window.screen.availHeight){
-            height=window.screen.availHeight*0.35+"px";
+        if (serverImage.height > window.screen.availHeight) {
+            height = window.screen.availHeight * 0.35 + "px";
         }
 
         serverImage.style = `
             height: %height%;
             width: auto;
             padding: 0px %padding%px 0px %padding%px;
-        `.replaceAll("%padding%", (_16_9_width - current_width)/2)
-        .replaceAll("%height%", height);
+        `.replaceAll("%padding%", (_16_9_width - current_width) / 2)
+            .replaceAll("%height%", height);
     }, 1);
 }
 
-function getProperties(element){
+function getProperties(element) {
     let properties = element.getElementsByClassName("properties");
 
-    if(properties == undefined){
+    if (properties === undefined) {
         return null;
     }
 
-    if(properties[0] == undefined){
+    if (properties[0] === undefined) {
         return null;
     }
 

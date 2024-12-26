@@ -5,7 +5,7 @@
     --card-border-radius: 25px
 }
 
-.section .title{
+.section .title {
     font-size: 80px;
     font-weight: 500;
     color: var(--accent-color);
@@ -23,7 +23,7 @@
     margin-bottom: 45px;
 }
 
-.section .grid{
+.section .grid {
     justify-content: center;
     display: grid;
     width: 100%;
@@ -32,7 +32,7 @@
     justify-items: center;
 }
 
-.section .card{
+.section .card {
     width: var(--card-width);
     height: var(--card-height);
     display: flex;
@@ -46,14 +46,13 @@
     cursor: pointer;
 }
 
-.no-pointer{
+.no-pointer {
     cursor: default !important;
 }
 
-.section .card img{
+.section .card img {
     width: var(--card-width);
     height: var(--card-height);
-    border-radius: 25px;
     display: flex;
     position: absolute;
     border-radius: var(--card-border-radius);
@@ -61,7 +60,7 @@
 }
 
 .blur {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     z-index: 5;
     width: var(--card-width);
@@ -69,9 +68,8 @@
     border-radius: 25px;
 }
 
-.section .card .name{
+.section .card .name {
     background-color: transparent;
-    border-radius: 25px;
     font-size: 33px;
     border-radius: 25px;
     z-index: 10;

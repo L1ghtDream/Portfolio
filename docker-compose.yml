@@ -5,8 +5,8 @@ services:
     container_name: portfolio-v3
     image: nginx:latest
     restart: unless-stopped
-    ports: []
-      # - "1234:80" # HTTP
+    ports: [ ]
+    # - "1234:80" # HTTP
     volumes:
       - ./html:/usr/share/nginx/html:ro
     networks:

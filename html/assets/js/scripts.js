@@ -9,7 +9,7 @@ function closeNav() {
     document.getElementsByClassName("side-nav")[0].classList.add("animate__fadeOutRight");
 }
 
-function copyEmail(){
+function copyEmail() {
     const tmp_textAread = document.createElement('textarea');
 
     tmp_textAread.value = "contact@voinearadu.com";
