@@ -1,9 +1,9 @@
 .experience {
     margin-top: 30vh;
     margin-bottom: 30vh;
-    margin-left: 6.5vw;
-    margin-right: 10vw;
-    width: 50vw;
+    /*margin-left: 6.5vw;*/
+    /*margin-right: 10vw;*/
+    /*width: 50vw;*/
     font-size: 20px;
     padding-top: 100px;
 }
@@ -11,7 +11,7 @@
 .experience .number {
     color: var(--clickable-color);
     font-size: 30px;
-    font-family: 'Inconsolata';
+    font-family: 'Inconsolata', "sans-serif";
     font-variant-numeric: slashed-zero;
 }
 
@@ -23,7 +23,7 @@
 
 .experience-bar-handle {
     background: var(--clickable-color);
-    height: 40px;
+    height: 38px;
     width: 4px;
     margin: 0;
     border: none;
@@ -65,7 +65,7 @@
 }
 
 .tablist span {
-    font-family: var(--sf-mono);
+    font-family: "SF Mono", "sans-serif";
 }
 
 .experience .entry .title .position {
@@ -75,7 +75,7 @@
 }
 
 .experience .entry .title .duration {
-    font-family: var(--sf-mono);
+    font-family: "SF Mono", "sans-serif";
     font-size: 15px;
 }
 
@@ -150,7 +150,7 @@
 
 .experience .projects .project-inner .tech * {
     font-size: 12px;
-    font-family: var(--sf-mono);
+    font-family: "SF Mono", "sans-serif";
     display: flex;
     margin: 0;
     color: var(--low-color);

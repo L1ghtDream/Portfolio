@@ -9,15 +9,13 @@
     --line-color: #a8b2d1;
     --low-color: #8892b0;
     --light-backgtound: #112240;
-    --calibre: "Calibre";
-    --sf-mono: "SF Mono Regular";
     --pop-animation: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 * {
     background-color: var(--main-color);
     color: var(--text-color);
-    font-family: var(--calibre);
+    font-family: "Roboto", "sans-serif";
     margin: 0;
 }
 
@@ -28,7 +26,7 @@
 .main-view .presentation {
     font-size: 20px;
     color: var(--clickable-color);
-    font-family: var(--sf-mono);
+    font-family: "SF Mono", "sans-serif";
 }
 
 .main-view .name {
@@ -46,7 +44,8 @@
 .description {
     font-size: 20px;
     color: var(--text-color);
-    width: 50vw;
+    /*width: 50vw;*/
+    padding-top: 20px;
 }
 
 .continue span {
