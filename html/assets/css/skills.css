@@ -19,7 +19,7 @@
 .skills-list li a {
     position: relative;
     margin-bottom: 10px;
-    padding: 0 0 0 20px;
+    padding: 0;
     font-family: "SF Mono", "sans-serif";
     font-size: 15px;
     color: var(--clickable-color);
@@ -28,8 +28,43 @@
 .skills-list li::before {
     content: "▸";
     position: absolute;
-    top: 6px;
-    left: 0px;
+    top: 2px;
+    left: 0;
     color: var(--clickable-color);
     line-height: 12px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.skills-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+}
+
+.skills-title{
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+@media (max-width: 1080px) {
+    .skills-list {
+        grid-template-columns: repeat(1, minmax(140px, 200px));
+    }
+}
+
+@media (max-width: 800px) {
+    .skills-container {
+        display: block;
+    }
+    .skills-box{
+        margin-top: 50px;
+    }
 }

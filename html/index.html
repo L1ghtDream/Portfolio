@@ -101,7 +101,8 @@
     </div>
     <div class="about-me">
         <div class="title">
-            <span class="text">About Me</span>
+            <span class="hline"></span>
+            <span class="text hline-text">About Me</span>
             <span class="hline"></span>
         </div>
         <br><br>
@@ -111,19 +112,51 @@
             code.<br><br>
             Since then, I have been working as a freelancer on various projects and I have been working on my own projects as well.<br><br>
             Here are some of the technologies I have been working with recently:
-            <ul class="skills-list">
-                <li>Java</li>
-                <li>Redis</li>
-                <li>MongoDB</li>
-                <li>Linux</li>
-                <li>Docker</li>
-                <li><a href="#experience" class="link">And more...</a></li>
-            </ul>
+
+            <div class="skills-container">
+
+
+                <div class="skills-box">
+                    <span class="skills-title hline-text">Languages</span>
+                    <ul class="skills-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C / C++</li>
+                        <li>Rust</li>
+                        <li>JavaScript</li>
+                        <li>Bash</li>
+                        <li><a href="#experience" class="link">And more...</a></li>
+                    </ul>
+                </div>
+                <div class="skills-box">
+                    <span class="skills-title hline-text">Technologies</span>
+                    <ul class="skills-list">
+                        <li>Kubernetes</li>
+                        <li>Docker</li>
+                        <li>Nginx</li>
+                        <li>Apache2</li>
+                        <li>Redis</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>AWS</li>
+                        <li>DigitalOcean</li>
+                        <li>OVHCloud</li>
+                        <li>Rest APIs</li>
+                        <li>Spring</li>
+                        <li>GitHub Actions</li>
+                        <li>SSH / SFTP</li>
+                        <li>Proxmox</li>
+                        <li>Hypervisors</li>
+                        <li><a href="#experience" class="link">And more...</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div id="experience" class="experience">
         <div class="title">
-            <span class="text">My Experience</span>
+            <span class="hline"></span>
+            <span class="text hline-text">My Experience</span>
             <span class="hline"></span>
         </div>
         <br><br>
@@ -142,6 +175,7 @@
                         <li class="6"><span class="experience-select-6">play.citruspvp.com</span></li>
                         <li class="7"><span class="experience-select-7">Personal Projects</span></li>
                         <li class="8"><span class="experience-select-8">Public Libs</span></li>
+                        <li class="9"><span class="experience-select-9">Deprecated Projects</span></li>
                     </ul>
                 </div>
             </div>
@@ -252,7 +286,15 @@
                     <li>Most of the apps listed here are created just for fun or to learn a new tech or with the
                         intent to be reused in other projects
                     </li>
-                    <li>Most of the artifacts are available on <a href="https://repo.voinearadu.com">my repository manager</a></li>
+                    <li>Most of the artifacts are available on <a href="https://repo.voinearadu.com" target="_blank">my repository manager</a></li>
+                </ul>
+            </div>
+            <div hidden class="entry experience-9">
+                <div class="title">
+                    <div class="duration">March 2020 -> Present</div>
+                </div>
+                <ul class="position-atributes">
+                    <li>Some of these deprecated libs are still available at <a href="https://repo.voinearadu.com" target="_blank">my repository manager</a></li>
                 </ul>
             </div>
         </div>
@@ -1032,6 +1074,133 @@
 <!--                        </footer>-->
 <!--                    </div>-->
 <!--                </li>-->
+            </ul>
+        </div>
+        <div hidden class="projects experience-9">
+            <ul>
+                <li>
+                    <div class="project-inner">
+                        <header>
+                            <div class="header">
+                                <span class="mdi mdi-folder-outline big"></span>
+                                <div class="links">
+                                    <a class="mdi mdi-github" target="_blank" href="https://github.com/Voinea-Radu/MessageBuilder"></a>
+                                    <!--<a class="mdi mdi-open-in-new" href="#"></a>-->
+                                </div>
+                            </div>
+                            <div class="title">MessageBuilder</div>
+                            <div class="description">
+                                A string manipulation library that allows you to create messages with placeholders.
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="tech">
+                                <ul>
+                                    <li>GSON</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-inner">
+                        <header>
+                            <div class="header">
+                                <span class="mdi mdi-folder-outline big"></span>
+                                <div class="links">
+                                    <a class="mdi mdi-github" target="_blank" href="https://github.com/Voinea-Radu/FileManager"></a>
+                                    <!--<a class="mdi mdi-open-in-new" href="#"></a>-->
+                                </div>
+                            </div>
+                            <div class="title">FileManager</div>
+                            <div class="description">
+                                A library that allows you to map java objects to json and read them back from disk back into a java object.
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="tech">
+                                <ul>
+                                    <li>GSON</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-inner">
+                        <header>
+                            <div class="header">
+                                <span class="mdi mdi-folder-outline big"></span>
+                                <div class="links">
+                                    <a class="mdi mdi-github" target="_blank" href="https://github.com/Voinea-Radu/Lambda"></a>
+                                    <!--<a class="mdi mdi-open-in-new" href="#"></a>-->
+                                </div>
+                            </div>
+                            <div class="title">Lambda</div>
+                            <div class="description">
+                                A library that allows the execution of delayed tasks as well as repeated tasks. It provides an API to create lambda functions.
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="tech">
+                                <ul>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-inner">
+                        <header>
+                            <div class="header">
+                                <span class="mdi mdi-folder-outline big"></span>
+                                <div class="links">
+                                    <a class="mdi mdi-github" target="_blank" href="https://github.com/Voinea-Radu/RedisManager"></a>
+                                    <!--<a class="mdi mdi-open-in-new" href="#"></a>-->
+                                </div>
+                            </div>
+                            <div class="title">RedisManager</div>
+                            <div class="description">
+                                A lib that allows the creation of redis events to facilitate inter server communication.
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="tech">
+                                <ul>
+                                    <li>Redis</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-inner">
+                        <header>
+                            <div class="header">
+                                <span class="mdi mdi-folder-outline big"></span>
+                                <div class="links">
+                                    <a class="mdi mdi-github" target="_blank" href="https://github.com/Voinea-Radu/GUIManager"></a>
+                                    <!--<a class="mdi mdi-open-in-new" href="#"></a>-->
+                                </div>
+                            </div>
+                            <div class="title">GUIManager</div>
+                            <div class="description">
+                                A library that allows the easy creation of GUIs in Spigot
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="tech">
+                                <ul>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

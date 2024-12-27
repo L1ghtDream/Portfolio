@@ -123,12 +123,17 @@
 }
 
 .hline {
-    width: 250px;
+    flex-grow: 1;
     height: 1px;
     background-color: var(--text-color);
-    display: block;
-    content: "";
+}
+
+.hline-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -30px;
     position: relative;
-    top: 20px;
-    left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

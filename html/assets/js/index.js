@@ -1,5 +1,5 @@
-registerExperienceButtons(8);
-registerExperienceHover(8);
+registerExperienceButtons(9);
+registerExperienceHover(9);
 
 function get_handle_size() {
     return 38;
